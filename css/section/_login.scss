@@ -1,0 +1,140 @@
+.loginPage {
+    padding: 69px 0 70px;
+
+    @media #{$large-mobile} {
+        padding: 58px 0 60px;
+    }
+
+    .loginForm {
+        & h2 {
+            font-size: 28px;
+            text-transform: capitalize;
+            font-weight: bold;
+            line-height: 22px;
+            margin-bottom: 30px;
+
+            @media #{$large-mobile} {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+        }
+
+        & form {
+            border: 1px solid $grey_color;
+            padding: 23px 20px 29px;
+            border-radius: 5px;
+        }
+
+
+    
+    }
+
+    .register {
+        @media #{$large-mobile} {
+            margin-top: 57px;
+        }
+    }
+
+    .login_submit label input[type="checkbox"] {
+        width: 15px;
+        height: 13px;
+        margin-right: 3px;
+    }
+
+    .login_submit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+.select_option {
+    padding-right: 25px;
+    padding-left: 35px;
+    text-align: start !important;
+    border-radius: 0;
+
+    @media #{$desktop-device} {
+        padding-left: 28px;
+    }
+
+    &::after {
+        top: 54%;
+        left: 13px;
+
+        @media #{$tablet-device} {
+            left: 8px;
+        }
+    }
+
+    & ul.list {
+        max-height: 300px;
+        overflow: auto;
+        width: 100%;
+    }
+}
+
+
+
+.socialLogin {
+    text-align: center;
+
+    .line {
+        padding: 10px 20px;
+        margin: auto;
+        position: relative;
+
+        span{
+            background-color: #fff;
+            z-index: 2;
+            position: relative;
+            padding: 0px 20px ;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 2px;
+            background-color: #666 ;
+            border-radius: 10px;
+        }
+    }
+
+    .social {
+        display: flex;
+        padding: 10px;
+        margin-bottom: 10px ;
+
+
+        .loginIcon {
+            padding: 10px 16px;
+            margin: 0px 5px;
+            width: 100%;
+            border-radius: 4px;
+            color: #fff;
+            text-transform: capitalize;
+
+            &.facebook{
+                background-color: #4267B2;
+            }
+
+            &.gmail{
+                background-color: #DB4437;
+            }
+
+            &:hover{
+                transform: translateY(-2px);
+                box-shadow: 0px 10px 20px #00000030;
+
+            }
+
+
+
+        }
+    }
+
+}
